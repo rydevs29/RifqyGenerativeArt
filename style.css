@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d; /* Latar belakang hampir hitam */
+    overflow: hidden; /* Hilangkan scrollbar */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 10;
+    pointer-events: none; /* Agar klik tembus ke canvas */
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #00ffcc; /* Warna aksen Cyan */
+      }
